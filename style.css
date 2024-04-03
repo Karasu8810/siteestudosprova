@@ -1,0 +1,27 @@
+form > h3 {
+    color: white;
+    display: none;
+    font-weight: normal;
+}
+form > h2{
+    color: white;
+}
+form > fieldset {
+    color: white;
+    margin: 15px 0;
+    width: 60%;
+    border: 2px solid white;
+}
+form > fieldset > legend{
+    color: white;
+    font-weight: bold;
+}
+form > button{
+    color: white;
+    background-color: rgb(111, 160, 15);
+    padding: 8px;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(32, 32, 32);
+}

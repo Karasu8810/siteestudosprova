@@ -107,6 +107,7 @@ $(document).ready(function(){
             var nota = (pontos/14)*10
             $('#nota').html(`<b>Nota:</b> ${nota.toFixed(2)}`)
             $('#nota').css('display','block')
+            $('#reset').css('display','block')
         }
 
         function certo(questao){
@@ -117,4 +118,28 @@ $(document).ready(function(){
             $(questao).css('color','red')
         }
     })
+
+    $('#reset').click(function(){
+        reset('#t1')
+        reset('#t2')
+        reset('#t3')
+        reset('#t4')
+        reset('#t5')
+        reset('#t6')
+        reset('#t7')
+        reset('#t8')
+        reset('#t9')
+        reset('#t10')
+        reset('#t11')
+        reset('#t12')
+        reset('#t13')
+        reset('#t14')
+
+        function reset(questao){
+            $(questao).css('color','white')
+            $('#nota').css('display','none')
+            $('#reset').css('display','none')
+        }
+    })
 })
+
